@@ -17,7 +17,7 @@ body {
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    padding: 15px 200px; 
+    padding: 15px 100px; 
     border-bottom: 0.1px solid rgb(55, 23, 87);
 }
 
@@ -157,7 +157,7 @@ body {
 
 .about{
     text-align: center;
-    padding: 50px 200px 110px 200px;
+    padding: 50px 100px 110px 100px;
 }
 
 .about h2{
@@ -191,7 +191,7 @@ body {
 
 .techWave{
     background-color:  #230e3d;
-    padding: 120px 300px 120px 300px;
+    padding: 120px 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -262,7 +262,7 @@ body {
 }
 
 .feature{
-    padding: 100px 300px;
+    padding: 100px 100px;
 }
 
 .feature-title{
@@ -333,8 +333,7 @@ body {
 }
 
 .host{
-    padding: 100px 100px;
-    padding: 120px 300px 120px 300px;
+    padding: 120px 100px;
 }
 
 .host-card{
@@ -382,15 +381,16 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 100px 150px;
+    padding: 100px 90px;
     position: relative;
+    text-align: center;
 }
 
-.footer-container{
+.footer-content{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
 }
 
 .footer-logo{
@@ -411,7 +411,7 @@ body {
 .platform-links{
     display: flex;
     flex-wrap: wrap;
-    gap: 90px;
+    gap: 50px;
     align-items: center;
     justify-content: center;
 }
@@ -430,98 +430,7 @@ body {
     color: #7c858d;
 }
 
-
-
-@media (max-width: 1150px) {
-    .navbar {
-        padding: 15px 50px;
-    }
-
-    .logo {
-        font-size: 45px;
-    }
-
-    .menu {
-        gap: 30px;
-    }
-
-    .about {
-        padding: 50px 50px 110px 50px;
-    }
-
-    .about h2 {
-        font-size: 40px;
-    }
-
-    .rate-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-    }
-
-    .techWave {
-        padding: 80px 50px;
-    }
-
-    .container-title {
-        font-size: 40px;
-    }
-
-    .grid-box {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .grid-card1 {
-        grid-column: span 4;
-        grid-row: span 1;
-        padding: 60px 40px;
-    }
-
-    .grid-card2, .grid-card3 {
-        grid-column: span 2;
-        padding: 60px 40px;
-    }
-
-    .grid-card4 {
-        grid-column: span 4;
-        padding: 40px 40px;
-    }
-
-    .grid-card5 {
-        grid-column: span 4;
-        padding: 40px 40px;
-    }
-
-    .feature {
-        padding: 80px 50px;
-    }
-
-    .feature-title {
-        font-size: 40px;
-    }
-
-    .feature-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .host {
-        padding: 80px 50px;
-    }
-
-    .footer {
-        padding: 80px 50px;
-    }
-
-    .footer-logo {
-        font-size: 60px;
-    }
-
-    .platform-links {
-        gap: 50px;
-    }
-}
-
-
-@media (max-width: 680px) {
+@media (max-width: 576px) {
     .navbar {
         padding: 15px;
         justify-content: space-between;
@@ -718,7 +627,10 @@ body {
     }
 
     .footer {
-        padding: 60px 20px;
+        padding: 30px 20px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     .footer-logo {
@@ -726,22 +638,140 @@ body {
     }
 
     .platform-links {
-        gap: 30px;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 15px 30px;
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+
     }
 
     .platform-link {
         font-size: 14px;
+        justify-content: center;
     }
 
     .copyright {
         font-size: 12px;
-        margin-top: 20px;
+        margin-top: 40px;
     }
 }
 
-@media(min-width: 681px){
+@media(min-width: 577px){
     .hamburger{
         display: none;
     }
 }
+
+
+
+@media (min-width: 577px) and (max-width: 992px) {
+    .navbar {
+        padding: 15px 30px;
+    }
+
+    .logo {
+        font-size: 40px;
+    }
+
+    .menu {
+        gap: 20px;
+    }
+
+    .menu li a{
+        font-size: 14px;
+    }
+
+    .btn{
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+
+    .hero{
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .about {
+        padding: 50px 50px 110px 50px;
+    }
+
+    .about h2 {
+        font-size: 40px;
+    }
+
+    .rate-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .techWave {
+        padding: 80px 50px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .container-title {
+        font-size: 40px;
+    }
+
+    .grid-box {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .grid-card1 {
+        grid-column: span 4;
+        grid-row: span 1;
+        padding: 60px 40px;
+    }
+
+    .grid-card2, .grid-card3 {
+        grid-column: span 2;
+        padding: 60px 40px;
+    }
+
+    .grid-card4 {
+        grid-column: span 4;
+        padding: 40px 40px;
+    }
+
+    .grid-card5 {
+        grid-column: span 4;
+        padding: 40px 40px;
+    }
+
+    .feature {
+        padding: 80px 50px;
+    }
+
+    .feature-title {
+        font-size: 40px;
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .host {
+        padding: 80px 50px;
+    }
+
+    .footer {
+        padding: 80px 50px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .footer-logo {
+        font-size: 60px;
+    }
+
+    .platform-links {
+        gap: 40px;
+    }
+
+}
+
+
+
